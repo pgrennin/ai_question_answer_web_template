@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+
+<h1>Choose a document to ask questions on it: </h1>
+<br>
+
+<table  class="mx-auto">
+    {% for document in documents %}
+    <tr>
+        <td><a href="document/{{ document }}">{{ display_format(document) }}</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

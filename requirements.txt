@@ -1,0 +1,4 @@
+flask
+langchain
+openai
+faiss-cpu

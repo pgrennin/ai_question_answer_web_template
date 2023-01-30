@@ -1,0 +1,14 @@
+<h3>Answer</h3>
+{{ response['answer']}}
+
+<br>
+<hr>
+
+<h3>Sources</h3>
+
+{% for source in response['sources'] %}
+<p>{{ source }}</p>
+<hr>
+{% endfor %}
+
+<button class="btn btn-primary" onclick="window.location.href = '/';">Show all documents</button>

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="center-div">
+    <h3>Document</h3>
+    <p>{{ display_format(document) }}</p>
+
+    <h3>Question</h3>
+
+    <form id="submit_question_form">
+        <div class="mb-3">
+            <input type="text" class="form-control" name="question" id="question">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <hr>
+
+    <div id="loading-spinner" style="display:none;">
+        <img src="{{ url_for('static', filename='img/loading.gif') }}">
+    </div>
+
+    <div id="answer_div"></div>
+</div>
+
+<script>
+    $("#submit_question_form").submit(function (e) {
+        console.log("are we here1?")
+        e.preventDefault();
+
+        $("#loading-spinner").show();
+        $("#answer_div").hide();
+
+        $.ajax({
+            type: "POST",
+            url: "/submit_question",
+            data: {question: $("#question").val(), document: "{{ document }}"},
+            success: function (response) {
+                $("#answer_div").html(response);
+            },
+            complete: function () {
+                $("#loading-spinner").hide();
+                $("#answer_div").show();
+            }
+        });
+    });
+</script>
+
+
+{% endblock %}
