@@ -9,17 +9,17 @@ be added easily using a script.
 
 1) To get started, clone this repository.
 
-`git clone https://github.com/pgrennin/ai_question_answer_web_template.git`
+   `git clone https://github.com/pgrennin/ai_question_answer_web_template.git`
 
-3) Add your OPENAI API KEY to app/config/config.py
+2) Add your OPENAI API KEY to app/config/config.py
 
-4) Run the following command to build the Docker image and run the container.  (This script requires Docker. Please
+3) Run the following command to build the Docker image and run the container.  (This script requires Docker. Please
    install if you don't have it already.)
 
    `bash run.dev.sh`
 
 
-5) Go to http://localhost:8000/ to see the application and run questions and answers on one of the documents already
+4) Go to http://localhost:8000/ to see the application and run questions and answers on one of the documents already
    pre-created.
 
 
