@@ -8,7 +8,10 @@ be added easily using a script.
 # Quick Start
 
 1) To get started, clone this repository.
+`git clone https://github.com/pgrennin/ai_question_answer_web_template.git`
+
 3) Add your OPENAI API KEY to app/config/config.py
+
 4) Run the following command to build the Docker image and run the container.  (This script requires Docker. Please
    install if you don't have it already.)
 
@@ -17,6 +20,8 @@ be added easily using a script.
 
 5) Go to http://localhost:8000/ to see the application and run questions and answers on one of the documents already
    pre-created.
+
+   That's it!
 
 # Upload your own document for doing question and answers (optional)
 
@@ -36,7 +41,7 @@ example:
 This will create new embeddings for all files in app/assets/raw. If an embedding file has already been created for a
 file, it will not be recreated. It checks if embedding was already created in /app/assets/embeddings.
 
-5) Go to http://localhost:8000/ view your document and ask questions on it.
+3) Go to http://localhost:8000/ view your document and ask questions on it.
 
 ## Notes
 
@@ -48,7 +53,7 @@ file, it will not be recreated. It checks if embedding was already created in /a
 
 ### The tools used in this project are:
 
-- Python 3.8
+- Python 3.11
 - LangChain
 - Flask
 - OpenAI API
