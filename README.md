@@ -8,6 +8,7 @@ be added easily using a script.
 # Quick Start
 
 1) To get started, clone this repository.
+
 `git clone https://github.com/pgrennin/ai_question_answer_web_template.git`
 
 3) Add your OPENAI API KEY to app/config/config.py
@@ -21,7 +22,6 @@ be added easily using a script.
 5) Go to http://localhost:8000/ to see the application and run questions and answers on one of the documents already
    pre-created.
 
-   That's it!
 
 # Upload your own document for doing question and answers (optional)
 
