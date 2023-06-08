@@ -7,7 +7,8 @@ be added easily using a script.
 
 
 # Demo
-![Demo](https://raw.githubusercontent.com/pgrennin/ai_question_answer_web_template/demo-ai-template2.gif)
+![Demo AI Template](https://raw.githubusercontent.com/pgrennin/ai_question_answer_web_template/main/demo-ai-template
+
 
 
 # Quick Start
