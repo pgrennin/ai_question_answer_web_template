@@ -5,6 +5,11 @@ setup by running in a Docker container, and provides a framework for adding
 and embedding documents. Already contains several embedded documents preloaded and more can
 be added easily using a script.
 
+
+# Demo
+![Demo](https://raw.githubusercontent.com/pgrennin/ai_question_answer_web_template/demo-ai-template2.gif)
+
+
 # Quick Start
 
 1) To get started, clone this repository.
